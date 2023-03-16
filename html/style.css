@@ -20,6 +20,23 @@ a {
     text-decoration: none;
 }
 
+a:link {
+    color: hsl(0, 0%, 100%);
+  }
+  
+  a:visited {
+    color: hsl(0, 0%, 100%);
+  }
+  
+  a:hover {
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: hsl(0, 0%, 100%);
+  }
+
 img {
     width: 100%;
     height: auto;
@@ -97,6 +114,11 @@ h6 {
     border: none;
 }
 
+.hero-button:hover {
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+    cursor: pointer;
+}
+
 /* FEATURES */
 
 .features-section {
@@ -171,10 +193,20 @@ h6 {
     padding-right: 25px;
 }
 
+.more-link a:hover {
+    color: hsl(0, 0%, 100%);
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
 .more-link img {
     width: 18px;
     height: auto;
     transform: translate(-20px, 4px);
+}
+
+.more-link a:hover ~ img {
+    filter: invert(83%) sepia(100%) saturate(2%) hue-rotate(101deg) brightness(207%) contrast(101%);
 }
 
 /* QUOTES */
@@ -313,6 +345,11 @@ form {
     padding: 16px 40px;
     border-radius: 28px;
     border: none;
+}
+
+.form-button input:hover {
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+    cursor: pointer;
 }
 
 .error-message {
